@@ -1,5 +1,8 @@
 package J14_ForEachLoop;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class C03_ForEachLoop {
 
     public static void main(String[] args) {
@@ -11,13 +14,33 @@ public class C03_ForEachLoop {
         boolean ortak=false;
         for (String a  :arr1) {
             for (String b: arr2) {
-                a.equals(b); 
-                ortak=true;
+               if(a.equals(b)){
+                   ortak=true;
+               }
             }
 
         }
 
         System.out.println("ortak = " + ortak);
+
+
+        List<String> ortakList = new ArrayList<String>();
+        for (String str1 :arr1) {
+            for (String str2:arr2) {
+                if (str1.equals(str2)) {
+                    ortakList.add(str1);
+                }
+            }
+        }
+
+
+        if (ortakList.isEmpty()) {
+            System.out.println("iki listede ortak eleman yok");
+        } else {
+            System.out.println("iki listedeki ortak elemanlar :" + ortakList);
+        }
+
+
 
     }
 }

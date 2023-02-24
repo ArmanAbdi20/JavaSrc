@@ -18,18 +18,14 @@ public class Task_20_Arrayboth_Ends {
 
 
         int sayiArr []= {1, 2, 3, 4};
-        // int yeniArr[]=new int[2];
+        int yenisayiArr []=new int[2];
+        for (int i = 0; i < sayiArr.length; i++) {
+            yenisayiArr[0]=sayiArr[0];
+            yenisayiArr[1]=sayiArr.length;
 
-        System.out.println("Arrays.toString(sayiArr) = " + Arrays.toString(sayiArr));
-        System.out.println("Arrays.toString(sayiArr).replace(\"1,2,3,4\", \"1\") = " + Arrays.toString(sayiArr).replace("1,2,3,4", "1"));
+        }
 
+        System.out.println(Arrays.toString(yenisayiArr));
 
-        // String sayiArr2  = Arrays.toString(sayiArr).substring(0)+Arrays.toString(sayiArr).substring(sayiArr.length-1);
-
-
-    //    System.out.println("sayiArr2 = " + sayiArr2);
-      
-
-        
     }
 }
