@@ -10,26 +10,32 @@ public class Task20 {
         // yeni bir array'a atayıp print eden METHOD create ediniz
 
         int arr[]={3,4,2,3,5,7,3,8,5,2,4};
+        System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
 
-        istenmeyenEleman(3);
+        int arr2[] = istenmeyenEleman(arr, 3);
 
-
-
-
-
-
-
-
-
-
+        System.out.println("Arrays.toString(arr2) = " + Arrays.toString(arr2));
 
 
     }
 
-    private static void istenmeyenEleman(int a) {
-        int arr[]={3,4,2,3,5,7,3,8,5,2,4};
-        Arrays.toString(arr).split("");
+    private static int [] istenmeyenEleman(int arr [], int a) {
 
+        int sayac=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]!= a) {
+                sayac++;
+            }
+        }
+        int [] arr2= new int [sayac];
+        int j=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]!= a) {
+                arr2[j] =arr[i];
+                j++;
+            }
+        }
+        return arr2;
 
     }
 }
