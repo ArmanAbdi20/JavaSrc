@@ -5,7 +5,7 @@ public class C05_PassByValue {
 
         /*
  eger bir method2'a yapılan değişiklik kalıcı olsun istenirse
-2 .değişklik  yapılan variable'lar atama tanımlanır.
+2 ) değişklik  yapılan variable'lar atama tanımlanır.
 
          */
 

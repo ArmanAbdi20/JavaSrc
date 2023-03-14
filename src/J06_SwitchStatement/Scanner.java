@@ -6,4 +6,12 @@ public class Scanner {
     public Scanner(InputStream in) {
 
     }
+
+    public String nextLine() {
+        return nextLine();
+    }
+
+    public int nextInt() {
+        return nextInt();
+    }
 }

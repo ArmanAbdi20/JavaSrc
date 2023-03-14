@@ -18,7 +18,7 @@ değil bir copy clone (vesikalık) (pointer)değeri gönderilir.
         double fiyat =100; // double type primitive variable
         fiyatArtır(100); // meth called
 
-        System.out.println("method call sonrası fiyat değeri :" + fiyat);
+        System.out.println("method call sonrası fiyat değeri :" + fiyat);//100
 
 
 

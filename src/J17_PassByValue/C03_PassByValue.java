@@ -10,7 +10,7 @@ public class C03_PassByValue {
 
 
         /*
-java non-primitive(Class array list-> refrans ) data turlerinde obj kemdisi değil de dataları geğişirse
+java non-primitive(Class array list-> refrans ) data turlerinde obj kendisi değil de dataları geğişirse
 obj referans ve kendisi değişmediği dataları değişikliğini kalıcı yapar.
  */
 // Task -> lis elemanları 24,20,87 iki farklı method ile list elemanlarını

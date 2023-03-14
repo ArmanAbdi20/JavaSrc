@@ -11,26 +11,11 @@ public class Task19 {
         // arr1 = { {1,2}, {3,4,5}, {6} } ve arr2 = { {7,8,9}, {10,11}, {12} }
 
 
-        int arr1[][] = { {1,2}, {3,4,5}, {6} };
-        int arr2[][] = { {7,8,9}, {10,11}, {12}};
+        int[][] arr1 = { {1,2}, {3,4,5}, {6}}, arr2 = {{7,8,9}, {10,11}, {12}};
+        for(int i = 0; i < arr1.length && i < arr2.length; i++)
+            for(int j = 0; j < arr1[i].length && j < arr2[i].length; j++)
+                System.out.println("arr1[i][j] + arr2[i][j] = " + (arr1[i][j] + arr2[i][j] ));
 
-
-        for (int a[]:arr1) {
-            for (int b:a) {
-                System.out.print(b+" ");
-            }
-            System.out.println();
-        }
-
-
-        for (int a[] : arr2) {
-            for (int b:a) {
-                System.out.print(b+" ");
-            }
-            System.out.println();
-        }
-
-//https://tamweblik.blogspot.com/2018/08/java-kodlama-ornekleri-27-iki-boyutlu.html
 
     }
 }

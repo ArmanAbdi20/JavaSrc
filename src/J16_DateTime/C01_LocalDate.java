@@ -14,14 +14,14 @@ public class C01_LocalDate {
 
         LocalDate bugün = LocalDate.now();// sistemden mevcut tarih datası bugün e atandı.
 
-        System.out.println("bugün = " + bugün);
+        System.out.println("bugün = " + bugün);//2023-03-01 (mevcut günün tarihi, değişebilir yani)
 
-        System.out.println("bugün.getYear() = " + bugün.getYear());
-        System.out.println("bugün.getMonth() = " + bugün.getMonth());
-        System.out.println("bugün.getMonthValue() = " + bugün.getMonthValue());
-        System.out.println("bugün.getDayOfWeek() = " + bugün.getDayOfWeek());
-        System.out.println("bugün.getDayOfMonth() = " + bugün.getDayOfMonth());
-        System.out.println("bugün.getDayOfYear() = " + bugün.getDayOfYear());
+        System.out.println("bugün.getYear() = " + bugün.getYear());//2023
+        System.out.println("bugün.getMonth() = " + bugün.getMonth());// march
+        System.out.println("bugün.getMonthValue() = " + bugün.getMonthValue()); //3
+        System.out.println("bugün.getDayOfWeek() = " + bugün.getDayOfWeek()); // WEDNESDAY
+        System.out.println("bugün.getDayOfMonth() = " + bugün.getDayOfMonth());//1
+        System.out.println("bugün.getDayOfYear() = " + bugün.getDayOfYear());//60
 
 
         LocalDate date1 = LocalDate.of(2016,3,23);
